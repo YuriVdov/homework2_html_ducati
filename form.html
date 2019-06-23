@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Form Sample</title>
+</head>
+<body>
+    <nav>
+        <a href="index.html">Back</a>
+    </nav>
+    <section>
+        <h1>Test for the selection of a motorcycle according to your preferences</h1>
+        <p><img src="img/ducatikatharina.jpg" alt="motogirl"></p>
+        <form method="POST" action="https://formspree.io/timmoon234@gmail.com">
+            <p><b>TEST:</b></p>
+            <label>Gender</label>
+            <label>
+                <input type="radio" name="gender" value="male"> Male
+            </label>
+            <label>
+                <input type="radio" name="gender" value="female"> Female
+            </label>
+            <label>
+                <input type="radio" name="gender" value="other"> Other
+            </label>
+            <br>
+            <label>Age year</label>
+            <label>
+                <input type="radio" name="age" value="0-18"> 0 - 18
+            </label>
+            <label>
+                <input type="radio" name="age" value="19-75"> 19 - 75
+            </label>
+            <label>
+                <input type="radio" name="age" value="75+"> 75 +
+            </label>
+            <br>
+            <label>Height cm</label>
+            <label>
+                <input type="radio" name="heught" value="0-150"> 0 - 150
+            </label>
+            <label>
+                <input type="radio" name="heught" value="151-199"> 151 - 199
+            </label>
+            <label>
+                <input type="radio" name="heught" value="200+"> 200 +
+            </label>
+            <br>
+            <label>Weight kg</label>
+            <label>
+                <input type="radio" name="weight" value="0-50"> 0 - 50
+            </label>
+            <label>
+                <input type="radio" name="weight" value="51-99"> 51 - 99
+            </label>
+            <label>
+                <input type="radio" name="weight" value="100+"> 100 +
+            </label>
+            <br>
+            <label>Road type</label>
+            <select id="simple" name="simple">
+              <option>High Way</option>
+              <option>Road</option>
+              <option>Off Road</option>
+            </select>
+            <br>
+            <label>Moto type</label>
+            <select id="groups" name="groups">
+              <optgroup label="Sport moto">
+                <option>Monster</option>
+                <option selected>Panigale</option>
+                <option>Supersport</option>
+              </optgroup>
+              <optgroup label="Enduro moto">
+                <option>Scrambler</option>
+                <option>Hypermotard</option>
+                <option>Multistrada</option>
+              </optgroup>
+            </select>
+            <br>
+            <label>Engine type</label>
+            <select multiple id="multi" name="multi">
+              <option>In-line </option>
+              <option>V</option>
+              <option>Boxer</option>
+            </select>
+            <br>
+            <label for="myColors">What's your favorite color?</label>
+            <input type="text" name="myColors" id="myColors" list="mySuggestion">
+            <datalist id="mySuggestion">
+              <option>Black</option>
+              <option>Yellow</option>
+              <option>Red</option>
+              <option>Rose</option>
+              <option>Orange</option>
+              <option>Green</option>
+              <option>Blue</option>
+              <option>Brown</option>
+            </datalist>
+            <br>
+            <label>What's your favorite seasons?</label>
+            <br>
+            <label>Spring</label>
+            <input type="checkbox" checked id="spring" name="spring" value="spring">
+            <br>
+            <label>Summer</label>
+            <input type="checkbox" checked id="summer" name="summer" value="summer">
+            <br>
+            <label>Autumn</label>
+            <input type="checkbox" checked id="autumn" name="autumn" value="autumn">
+            <br>
+            <label>Winter</label>
+            <input type="checkbox" checked id="winter" name="winter" value="winter">
+            <br>
+            <input type="submit">
+            <input type="reset">
+        </form>
+        <form method="POST" action="https://formspree.io/timmoon234@gmail.com">
+            <p><b>Please fill out the form for the test result:</b></p>
+            <label>Name:
+            <input type="text" name="name" placeholder="Your name" required>
+            </label>
+            <br>
+            <label>Email:
+            <input type="email" name="email" placeholder="Email address" required>
+            </label>
+            <br>
+            <label>Phone:
+            <input type="tel" name="tel" placeholder="Phone number" required>
+            </label>
+            <br>
+            <input type="submit">
+            <input type="reset">
+        </form>
+        <form method="POST" action="https://formspree.io/timmoon234@gmail.com">
+            <p><b>What do you think about our test?</b></p>
+            <textarea cols="30" rows="5"></textarea>
+            <br>
+            <input type="submit">
+            <input type="reset">
+        </form>
+    </section>
+</body>
+</html>
